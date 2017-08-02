@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="wrap">
+  <view class="head">{{title}}</view>
+  <view wx:for="{{data}}" class="row">
+    
+    <image class="pic" data-movie="{{item.id}}" bindtap="show" src="{{item.images.small}}" />
+    <view class="mid">
+    <text class="name">{{item.title}}</text>
+    <text class="movie">{{item.original_title}}({{item.year}})</text>
+    <text class="director">{{item.directors[0].name}}</text>
+    </view>
+     <view class="right">
+      <text>{{item.rating.average}}</text>
+     </view>
+  </view>
+</view>

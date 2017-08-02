@@ -1,0 +1,87 @@
+/* detail.wxss */
+
+.contain {
+  width: 100%;
+  height: auto;
+  padding-top: 39rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.contain .header {
+  display: inline-flex;
+  width: 90%;
+  margin: 0 auto;
+  border: 2rpx solid #ccc;
+  height: 320rpx;
+  overflow: hidden;
+  background: gray;
+}
+
+.contain .header .left {
+  width: 184rpx;
+  height: 272rpx;
+  line-height: 272rpx;
+}
+
+.contain .header .left .pic {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
+.contain .header .right {
+  width: 70%;
+  font-size: 30rpx;
+  padding-left: 100rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1.6;
+  padding-top: 20rpx;
+  margin-left: 60rpx;
+}
+
+.contain .main {
+  width: 90%;
+  height: auto;
+  border: 2rpx solid #ccc;
+  font-size: 28rpx;
+  margin: 40rpx auto;
+  background: gray;
+}
+
+.contain .main .con {
+  width: 90%;
+  height: auto;
+  margin: 10rpx auto;
+  display: block;
+}
+
+.actor {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  height: 140rpx;
+  overflow: hidden;
+  background: gray;
+  margin-top: 20rpx;
+  font-size:16px;
+}
+
+.actor .picCon {
+  width: 12rpx;
+  height: 100rpx;
+  flex-grow: 1;
+  display: inline-block;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+}
+
+.actor .name {
+  flex-grow: 3;
+  text-indent: 2em;
+  line-height: 3;
+}

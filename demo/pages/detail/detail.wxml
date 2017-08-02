@@ -1,0 +1,31 @@
+<!--detail.wxml-->
+<view class="contain">
+  <view class="header">
+    <view class="left">
+      <image class="pic" src="{{movieData.images.small}}" />
+    </view>
+    <view class="right">
+
+      <text>评分：{{movieData.rating.average}}</text>
+      <text class="name">评分人数：{{movieData.ratings_count}}</text>
+
+      <text class="movie">上映时间：{{movieData.year}}</text>
+      <text class="director">国家：{{movieData.countries[0]}}</text>
+      <text>类型：{{movieData.genres[0]}}/{{movieData.genres[1]}}</text>
+      <view>
+        <button type="default" size="mini" style="margin-right: 10rpx;"> 想看 </button>
+        <button type="default" size="mini"> 看过 </button>
+      </view>
+    </view>
+  </view>
+  <view class="main">
+      <text class="con">{{movieData.summary}}</text>
+  </view>
+  <view class="actor" wx:for="{{movieData.casts}}">
+   <view class="picCon">
+    
+    <image style="width:80%;height:100%;" class="pic" src="{{item.avatars.small}}" />
+    </view>
+    <text class="name">{{item.name}}</text>
+  </view>
+</view>

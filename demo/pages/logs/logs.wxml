@@ -1,0 +1,19 @@
+
+<!--input.wxml-->
+<view>
+<view class="section" class="seakgroup" ontap="submit">
+  <input placeholder="搜索"   maxlength="20" confirm-type="search" class="search" placeholder-style="text-align:center;font-size:16px;" bindinput="find"  />
+  <icon class="icon" type="search" size="16" color="{{gray}}"/>
+  <text style="display:none">{{inputValue}}</text>
+
+</view>
+<view class="list" wx:for="{{data}}">
+  <view class="photo">
+   <image style="width:80%;height:200%;" src="{{item.images.small}}" data-movie="{{item.id}}" bindtap="show"/>
+  </view>
+  <view class="right">
+   <text style="padding-right:32rpx;">{{item.title}}</text>
+    <text style="color:red;">{{item.rating.average}}</text><text>/{{item.year}}</text>
+  </view>
+</view>
+</view>

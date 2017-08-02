@@ -1,0 +1,8 @@
+<!--pages/login/login.wxml-->
+
+<form id="login">
+  <text class="title">欢迎来到豆瓣</text>
+  <input placeholder="邮箱/手机号/用户名" focus="{{focus}}" class="user" placeholder-style="text-align:left;font-size:14px;text-indent:1em;"/>
+  <input placeholder="密码" password="true" focus="{{focus}}" class="pwd"  placeholder-style="text-align:left;font-size:14px;text-indent:1em;"/>
+  <button class="btn" type="default" size="20"> 登录 </button>
+</form>

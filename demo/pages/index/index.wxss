@@ -1,0 +1,64 @@
+/**index.wxss**/
+.wrap{
+  width:100%;
+  height:auto;
+  display: flex; 
+  flex-direction: column;
+
+}
+.wrap .head{
+  width:100%;
+  height:110rpx;
+  border:1px solid #adadad;
+  text-align:center;
+  line-height: 110rpx;
+  color:#adadad;
+  font-weight:700;
+}
+.wrap .row{
+  width:100%;
+  height:216rpx;
+  border-bottom:1px solid #adadad;
+  flex-grow:1; 
+  position: relative;
+}
+.wrap .row .pic{
+  width:144rpx;
+  height:144rpx;
+  margin-left:26rpx;
+  margin-top:40rpx;
+}
+.wrap .row .mid{
+  position: absolute;
+  width:304rpx;
+  height:100%;
+  font-size:36rpx;
+  color:black;
+  font-weight:400;
+  display:flex;
+  flex-direction: column;
+  left:200rpx;
+  top:44rpx;
+}
+.wrap .row .mid .name{
+  font-weight:700;
+}
+.wrap .row .mid .movie{
+  margin-top:6rpx;
+  font-size:30rpx;
+  color:#adadad;
+  white-space:nowrap;
+}
+.wrap .row .mid .director{
+  margin-top:6rpx;
+  font-size:30rpx;
+  color:#adadad;
+  white-space:nowrap;
+}
+.wrap .row .right{
+  position:absolute;
+  top:44rpx;
+  right:34rpx;
+  color:red;
+  font-weight:700;
+}
